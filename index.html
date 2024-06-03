@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+
+    
+    <div class="cal">
+    <div class="upper">
+        <input id="display" type="text" readonly>
+    </div>
+    <div class="lower">
+        <div class="lower-one low">
+            <div class="lower-one-one low-one"><button class="AC" onclick="currentValue = currentValue.slice(0, -1); document.getElementById('display').value = currentValue;">C</button></div>
+            <div class="lower-one-two low-one"><button onclick="currentValue=currentValue + '%';document.getElementById('display').value=currentValue;">%</button></div>
+            <div class="lower-one-three low-one"><button onclick="currentValue=currentValue + '/';document.getElementById('display').value=currentValue;"><i class="ri-divide-line"></i></button></div>
+            <div class="lower-one-four low-one"><button onclick="currentValue=currentValue + '*';document.getElementById('display').value=currentValue;">X</button></div>
+
+        </div>
+        <div class="lower-two low">
+            <div class="lower-one-one low-one"><button onclick="currentValue = currentValue + '7'; document.getElementById('display').value = currentValue;">7</button></div>
+            <div class="lower-one-two low-one"><button onclick="currentValue = currentValue + '8'; document.getElementById('display').value = currentValue;">8</button></div>
+            <div class="lower-one-three low-one"><button onclick="currentValue = currentValue + '9'; document.getElementById('display').value = currentValue;">9</button></div>
+            <div class="lower-one-four low-one"><button onclick="currentValue = currentValue + '-'; document.getElementById('display').value = currentValue;">--</button></div>
+        </div>
+        <div class="lower-three low">
+            <div class="lower-one-one low-one"><button onclick="currentValue = currentValue + '4'; document.getElementById('display').value = currentValue;">4</button></div>
+            <div class="lower-one-two low-one"><button onclick="currentValue = currentValue + '5'; document.getElementById('display').value = currentValue;">5</button></div>
+            <div class="lower-one-three low-one"><button onclick="currentValue = currentValue + '6'; document.getElementById('display').value = currentValue;">6</button></div>
+            <div class="lower-one-four low-one"><button onclick="currentValue = currentValue + '+'; document.getElementById('display').value = currentValue;">+</button></div>
+        </div>
+        <div class="lower-four low">
+            <div class="lower-one-one low-one"><button onclick="currentValue = currentValue + '1'; document.getElementById('display').value = currentValue;">1</button></div>
+            <div class="lower-one-two low-one"><button onclick="currentValue = currentValue + '2'; document.getElementById('display').value = currentValue;">2</button></div>
+            <div class="lower-one-three low-one"><button onclick="currentValue = currentValue + '3'; document.getElementById('display').value = currentValue;">3</button></div>
+            <div class="lower-one-four low-one"><button >^</button></div>
+        </div>
+        <div class="lower-five low">
+            <div class="lower-one-one low-one"><button class="AC" onclick="currentValue = ''; document.getElementById('display').value = currentValue;">AC</button></div>
+            <div class="lower-one-two low-one"><button onclick="currentValue = currentValue + '0'; document.getElementById('display').value = currentValue;">0</button></div>
+            <div class="lower-one-three low-one"><button onclick="currentValue = currentValue + '.'; document.getElementById('display').value = currentValue;">.</button></div>
+            <div class="lower-one-four low-one"><button class="AC" onclick="let result = eval(currentValue);
+            document.getElementById('display').value = result" >=</button></div>
+        </div>
+    </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

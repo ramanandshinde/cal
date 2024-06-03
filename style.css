@@ -1,0 +1,79 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  font-family: sans-serif;
+}
+html,body{
+height: 100%;
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+.cal{
+  background-color: rgb(255, 255, 255);
+  width: 23vw;
+  height: 30vw;
+  border-radius: 1vw;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid grey;
+}
+.upper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 32%;
+  background-color: blue;
+  
+  
+}
+.upper input{
+  background-color: rgb(255, 254, 254);
+  /* padding: 5vw; */
+  padding: 1vw;
+  color: rgb(146, 25, 25);
+  font-size: 1.3VW;
+  border: none;
+  text-align: right;
+}
+.lower{
+  background-color: rgba(51, 45, 45, 0.815);
+  height: 68%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+}
+.low{
+  /* background-color: rebeccapurple; */
+  height: 13%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.low-one{
+  /* background-color: red; */
+  height: 100%;
+  width: 15%;
+  border-radius: 25%;
+}
+button{
+  background-color:  rgba(221, 212, 212, 0.815);
+  font-size: 1.4vw;
+  height: 100%;
+  width: 100%;
+  border-radius: 55%;
+  color: rgb(12, 12, 12);
+  cursor: pointer;
+  transform: 100ms;
+  border: none;
+}
+button:hover{
+  transform: scale(1.1);
+}
